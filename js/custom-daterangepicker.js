@@ -33,6 +33,8 @@
 
                 // Overwrite input value with date range label i.e. "Last 30 Days"
                 $scope.setLabel = function(label, elem) {
+                    console.log('customDateRangePicker setLabel() label ', label);
+                    console.log('customDateRangePicker setLabel() elem ', elem);
                     if(label) {
                         $timeout( function () {
                             elem.find('.date-picker').val(label);
