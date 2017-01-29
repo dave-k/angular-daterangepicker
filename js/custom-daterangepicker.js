@@ -91,8 +91,6 @@
                     },
 
                     callback: function(start, end, chosenLabel) {
-                    console.log('customDateRangePicker callback() start ', start);
-                    console.log('customDateRangePicker callback() chosenLabel ', chosenLabel);
                         var customRangeLabel = scope.options.locale.customRangeLabel;
                         if(chosenLabel == customRangeLabel) {
                             // Update custom range start and end dates
