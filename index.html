@@ -95,6 +95,10 @@
 <script>
 exampleApp = angular.module('example', ['ngMessages', 'daterangepicker', 'customdaterangepicker']);
 exampleApp.controller('TestCtrl', function($scope) {
+    
+    $scope.timeperiod = {};
+    $scope.timeperiod.defaultLabel = 'Last 7 Days';
+    
     $scope.date = {
         startDate: moment().subtract(1, "days"),
         endDate: moment()
